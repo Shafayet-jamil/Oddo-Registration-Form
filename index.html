@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odoo Workshop Registration</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+</head>
+<body>
+<div class="container">
+    <div class="header">
+        <h1>Odoo Workshop</h1>
+        <p>Register to join our workshop</p>
+    </div>
+
+    <div class="info-section">
+        <h2>What is Odoo?</h2>
+        <p>Odoo is a powerful, open-source ERP (Enterprise Resource Planning) software suite that helps businesses manage their operations efficiently. From accounting and inventory to CRM and HR, Odoo provides integrated solutions for every business need.</p>
+
+        <p><strong>Career Opportunities:</strong></p>
+        <ul>
+            <li>High demand for Odoo developers and consultants globally</li>
+            <li>Lucrative salaries ranging from $40K to $100K+ annually</li>
+            <li>Work with Fortune 500 companies and startups</li>
+            <li>Freelancing opportunities with flexible work arrangements</li>
+            <li>Growing market with 7+ million users worldwide</li>
+            <li>Master Python, PostgreSQL, and modern web technologies</li>
+        </ul>
+    </div>
+
+    <form id="registrationForm">
+        <div class="form-group">
+            <label for="name">Name *</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your full name">
+        </div>
+
+        <div class="form-group">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+        </div>
+
+        <div class="form-group">
+            <label for="department">Department *</label>
+            <input type="text" id="department" name="department" required placeholder="Enter your department">
+        </div>
+
+        <div class="form-group">
+            <label for="phone">Phone (WhatsApp) *</label>
+            <input type="tel" id="phone" name="phone" required placeholder="+880 1XXX-XXXXXX">
+        </div>
+
+        <div class="form-group">
+            <label class="checkbox-container">
+                <input type="checkbox" id="notifications" name="notifications">
+                <span class="checkbox-label">I want to get notified about upcoming events and seminars.</span>
+            </label>
+        </div>
+
+        <div class="form-group">
+            <label for="suggestions">Suggestions/Comments</label>
+            <textarea id="suggestions" name="suggestions" placeholder="Share your thoughts or expectations..."></textarea>
+        </div>
+
+        <button type="submit" class="btn" id="submitBtn">Register Now</button>
+
+        <div class="success-message" id="successMessage">
+            ✓ Registration successful! We'll contact you soon.
+        </div>
+
+        <div class="error-message" id="errorMessage">
+            ✗ Something went wrong. Please try again.
+        </div>
+    </form>
+</div>
+
+
+</body>
+</html>

@@ -9,6 +9,7 @@ body {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
     min-height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -34,6 +35,121 @@ body {
         transform: translateY(0);
     }
 }
+/*//css started form here*/
+
+
+.header p {
+    color: #718096;
+    font-size: 15px;
+}
+
+.event-details {
+    background: linear-gradient(135deg, #e6fffa 0%, #b2f5ea 100%);
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 30px;
+    border-left: 4px solid #38a169;
+}
+
+.event-details h2 {
+    color: #2d3748;
+    font-size: 20px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+    padding: 12px;
+    background: rgba(255, 255, 255, 0.7);
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+.detail-item:hover {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translateX(5px);
+}
+
+.detail-label {
+    font-weight: 600;
+    color: #2d3748;
+    min-width: 80px;
+    font-size: 15px;
+    margin-right: 15px;
+}
+
+.detail-value {
+    color: #4a5568;
+    font-size: 15px;
+    flex: 1;
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+/* new css end here*/
+
+
+/*//new css addd here*/
+
+.error-message {
+    display: none;
+    background: #fed7d7;
+    color: #c53030;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+
+.footer {
+    background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
+    color: white;
+    display: flex;
+    /*flex-direction: column;*/
+    /*text-align: center;*/
+    padding: 20px;
+    margin-top: 40px;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 30px 20px;
+    }
+
+    .header h1 {
+        font-size: 24px;
+    }
+
+    .detail-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+
+    .detail-label {
+        margin-bottom: 8px;
+        margin-right: 0;
+    }
+
+    .detail-value {
+        padding-left: 20px;
+    }
+}
+
+/*//css end here*/
+
+
 
 .header {
     text-align: center;
@@ -212,3 +328,5 @@ textarea {
         font-size: 24px;
     }
 }
+
+
